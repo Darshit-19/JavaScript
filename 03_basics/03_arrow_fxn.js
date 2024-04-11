@@ -4,7 +4,7 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);
-        console.log(this);
+        console.log(this); 
     }
 
 }
@@ -13,11 +13,11 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this);
+// console.log(this); --> it refers to an {empty object}
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username);   we can not use this in fxn , it will give result as undefined
 // }
 
 // chai()
@@ -39,10 +39,15 @@ const chai =  () => {
 //     return num1 + num2
 // }
 
+//implicit return
+
+
 // const addTwo = (num1, num2) =>  num1 + num2
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
+
+//Object return
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
